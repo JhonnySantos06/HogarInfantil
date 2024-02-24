@@ -1,0 +1,76 @@
+<div class="form-container">
+
+  <form action="" (ngSubmit)="guardarDatos(formData)" #formData="ngForm">
+    <div class="form">
+        <h1>Hogar Infantil</h1>
+    </div>
+        <div class="grupo">
+            <input type="number" name="id" ngModel required>
+            <span class="barra"></span>
+            <label for="id">Id</label>
+        </div>
+
+        <div class="grupo">
+            <input type="text" name="nombres" ngModel required>
+            <span class="barra"></span>
+            <label for="nombres">Nombres</label>
+        </div>
+
+        <div class="grupo">
+            <input type="number" name="edad" ngModel required>
+            <span class="barra"></span>
+            <label for="edad">Edad</label>
+        </div>
+
+        <div class="grupo">
+            <input type="text" name="grupo" ngModel required>
+            <span class="barra"></span>
+            <label for="grupo">Grupo</label>
+        </div>
+
+        <div class="grupo">
+            <input type="number" name="noidentificacion" ngModel required>
+            <span class="barra"></span>
+            <label for="noidentificacion">No Identificacion</label>
+        </div>
+
+        <div class="grupo">
+            <input type="text" name="acudiente" ngModel required>
+            <span class="barra"></span>
+            <label for="acudiente">Acudiente</label>
+        </div>
+
+        <div class="grupo">
+            <input type="number" name="telacudiente" ngModel required>
+            <span class="barra"></span>
+            <label for="teleacudiente">Telefono</label>
+        </div>
+
+        <div class="grupo">
+            <input type="text" name="direccion" ngModel required>
+            <span class="barra"></span>
+            <label for="direccion">Direccion</label>
+        </div>
+
+        <div class="grupo">
+            <input type="number" name="horaingreso" ngModel required>
+            <span class="barra"></span>
+            <label for="horaingreso">Hora Ingreso</label>
+        </div>
+
+        <div class="grupo">
+            <input type="number" name="horasalida" ngModel required>
+            <span class="barra"></span>
+            <label for="horasalida">Hora Salida</label>
+        </div>
+
+        <div class="grupo">
+            <input type="text" name="cuidados" ngModel required>
+            <span class="barra"></span>
+            <label for="cuidados">Cuidados</label>
+        </div>
+
+        <button type="submit">Guardar</button>
+</form>
+
+</div>
