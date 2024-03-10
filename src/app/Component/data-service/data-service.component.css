@@ -68,3 +68,16 @@ tbody{
 background-color: #f2f2f2;
 
 }
+
+
+.volver-menu {
+  background: #007bff;
+  color: #fff;
+  padding: 10px; /* Ajusta el espacio interno del botón */
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  position: fixed; /* Establece la posición fija */
+  top: 10px; /* Ajusta la distancia desde la parte superior */
+  right: 10px; /* Ajusta la distancia desde la derecha */
+}

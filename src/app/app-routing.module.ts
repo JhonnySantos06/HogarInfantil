@@ -5,7 +5,7 @@ import { DataServiceComponent } from './Component/data-service/data-service.comp
 import { LoginComponent} from './Component/login/login.component';
 import { UsuarioNuevoComponent } from './Component/usuario-nuevo/usuario-nuevo.component';
 import { MenuComponent } from './Component/menu/menu.component';
-
+import { AuthGuard } from './auth.guard';
 const routes: Routes = [
 
   {path: 'login',
@@ -13,11 +13,13 @@ const routes: Routes = [
 }, 
   {
     path: 'registro',
-    component: RegisterComponent
+    component: RegisterComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'data',
-    component:DataServiceComponent
+    component:DataServiceComponent,
+    canActivate: [AuthGuard]
   }, 
   {
     path: 'nuevo',
@@ -25,7 +27,8 @@ const routes: Routes = [
   },
   {
     path: 'menu',
-    component: MenuComponent
+    component: MenuComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: '**',

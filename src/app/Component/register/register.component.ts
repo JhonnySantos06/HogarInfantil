@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { BaseDatosService } from '../../Service/base-datos.service';
 import { NgForm } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { NgForm } from '@angular/forms';
 })
 export class RegisterComponent {
 
-  constructor(private baseDatosService: BaseDatosService) {}
+  constructor(private baseDatosService: BaseDatosService,private router: Router) {}
 
 
  guardarDatos(formData: NgForm) {
@@ -24,5 +25,8 @@ export class RegisterComponent {
         // Manejar errores, mostrar mensajes de error, etc.
       }
     );
+  }
+  volverAlMenu():void{
+    this.router.navigate(['/menu']);
   }
 }

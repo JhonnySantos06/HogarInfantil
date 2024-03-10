@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BaseDatosService } from '../../Service/base-datos.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-data-service',
@@ -10,7 +11,7 @@ export class DataServiceComponent implements OnInit {
   datosRecibidos: any;
   grupo: string = '';
 
-  constructor(private baseDatosService: BaseDatosService) {}
+  constructor(private baseDatosService: BaseDatosService, private router: Router) {}
 
   ngOnInit() {
     this.obtenerDatosPorGrupo();
@@ -40,4 +41,7 @@ export class DataServiceComponent implements OnInit {
     );
   }
   
+  volverAlMenu():void{
+    this.router.navigate(['/menu']);
+  }
 }
