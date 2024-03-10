@@ -1,3 +1,4 @@
+<body>
 <div class="form-container">
 
   <form action="" (ngSubmit)="guardarDatos(formData)" #formData="ngForm">
@@ -43,7 +44,7 @@
         <div class="grupo">
             <input type="number" name="telacudiente" ngModel required>
             <span class="barra"></span>
-            <label for="teleacudiente">Telefono</label>
+            <label for="telacudiente">Telefono</label>
         </div>
 
         <div class="grupo">
@@ -70,7 +71,9 @@
             <label for="cuidados">Cuidados</label>
         </div>
 
-        <button type="submit">Guardar</button>
+        <button type="submit" aria-label="Guardar datos">Guardar</button>
 </form>
 
 </div>
+
+</body>

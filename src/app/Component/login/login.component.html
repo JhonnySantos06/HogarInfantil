@@ -1,15 +1,20 @@
-<!-- Agrega (ngSubmit)="login(form)" en el formulario -->
+
+<body>
+<div class="login-container">
+  <h2>Iniciar Sesión</h2>
 <form #form="ngForm" (ngSubmit)="login(form)">
     <div class="form-group">
       <label for="correo">Correo:</label>
       <!-- Utiliza ngModel en el campo de entrada -->
-      <input type="text" id="correo" name="correo" [(ngModel)]="correo" required>
+      <input type="text" id="correo" name="correo" [(ngModel)]="correo" required class="form-control">
     </div>
     <div class="form-group">
       <label for="contrasena">Contraseña:</label>
       <!-- Utiliza ngModel en el campo de entrada -->
-      <input type="password" id="contrasena" name="contrasena" [(ngModel)]="contrasena" required>
+      <input type="password" id="contrasena" name="contrasena" [(ngModel)]="contrasena" required  class="form-control">
     </div>
     <button type="submit">Iniciar Sesión</button>
+    <a routerLink="/nuevo" class="registro-link"> Registrarse aquí </a>
   </form>
-  
+  </div>
+  </body>

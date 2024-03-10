@@ -31,6 +31,11 @@ export class BaseDatosService {
     return this.http.delete<any>(`${this.URL}/datos/${grupo}`);
   }
 
+  registrarUsuario(correo: string, contrasena: string): Observable<any> {
+    const usuario = { correo, contrasena };
+    return this.http.post<any>(`${this.URL}/registro`, usuario);
+  }
+
   // Método para actualizar datos
   actualizarDatosPorGrupo(grupo: string, nuevosDatos: any): Observable<any> {
     return this.http.put<any>(`${this.URL}/datos/${grupo}`, nuevosDatos);

@@ -1,0 +1,6 @@
+projectKey=HogarInfantil
+serverUrl=http://localhost:9000
+serverVersion=10.4.0.87286
+dashboardUrl=http://localhost:9000/dashboard?id=HogarInfantil
+ceTaskId=42b2acd7-152e-4ada-b2cf-71f05a5bb6cc
+ceTaskUrl=http://localhost:9000/api/ce/task?id=42b2acd7-152e-4ada-b2cf-71f05a5bb6cc

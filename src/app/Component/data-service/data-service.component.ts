@@ -8,7 +8,7 @@ import { BaseDatosService } from '../../Service/base-datos.service';
 })
 export class DataServiceComponent implements OnInit {
   datosRecibidos: any;
-  grupo: string = 'A1';
+  grupo: string = '';
 
   constructor(private baseDatosService: BaseDatosService) {}
 
