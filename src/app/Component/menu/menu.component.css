@@ -1,0 +1,29 @@
+
+h2 {
+    text-align: center;
+    color: #333; /* Color del texto */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espacio superior */
+  }
+  
+  button {
+    padding: 10px 20px; /* Padding interno del botón */
+    margin: 0 10px; /* Margen entre botones */
+    font-size: 16px; /* Tamaño de fuente */
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none;
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transición de color de fondo al pasar el ratón */
+  
+    /* Estilos al pasar el ratón sobre el botón */
+    &:hover {
+      background-color: #1a9e20;
+    }
+  }
+  
